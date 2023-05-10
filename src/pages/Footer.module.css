@@ -1,0 +1,230 @@
+.bo51,
+.footerLogo {
+  text-decoration: none;
+  width: 142px;
+  height: 57px;
+  cursor: pointer;
+}
+.bo51 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../../public/bo51@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.footerLogo {
+  position: relative;
+  flex-shrink: 0;
+}
+.barterOnline2nd {
+  position: relative;
+  line-height: 24px;
+}
+.vectorIcon {
+  position: absolute;
+  height: 96%;
+  width: 96%;
+  top: 2%;
+  right: 2%;
+  bottom: 2%;
+  left: 2%;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.socialFacebook,
+.socialInstagram {
+  text-decoration: none;
+  top: 0;
+  width: 36.57px;
+  height: 36.57px;
+}
+.socialFacebook {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+.socialInstagram {
+  left: 60.95px;
+}
+.socialInstagram,
+.socialTwitter,
+.vectorIcon3 {
+  position: absolute;
+  overflow: hidden;
+}
+.socialTwitter {
+  text-decoration: none;
+  top: 0;
+  left: 121.9px;
+  width: 36.57px;
+  height: 36.57px;
+}
+.vectorIcon3 {
+  height: 96.01%;
+  width: 96.01%;
+  top: 2%;
+  right: 2%;
+  bottom: 2%;
+  left: 2%;
+  max-width: 100%;
+  max-height: 100%;
+}
+.socialPinterest,
+.socialTwitch {
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  left: 179px;
+  width: 36.57px;
+  height: 36.57px;
+  overflow: hidden;
+}
+.socialTwitch {
+  left: 230px;
+}
+.socialLinks {
+  position: relative;
+  width: 266.57px;
+  height: 36.57px;
+  flex-shrink: 0;
+}
+.footerStart {
+  width: 332px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+.barterOnline {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-3xl);
+  line-height: 30px;
+  font-weight: 500;
+  background: radial-gradient(50% 50%at 50% 50%, #219c87, #f0562a);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.home {
+  cursor: pointer;
+}
+.favorites,
+.home {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  color: inherit;
+}
+.advertisement {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font-size: var(--font-size-base);
+  font-family: var(--components-button-large);
+  color: var(--primary-contrast);
+  text-align: left;
+  display: inline-block;
+}
+.advertisement,
+.blog {
+  align-self: stretch;
+  position: relative;
+}
+.blog{
+  cursor: pointer;
+}
+.footerCol1 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+}
+.footer,
+.footerCol1,
+.footerCol4,
+.footerEnd {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.footerCol4 {
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-2xs);
+}
+.footer,
+.footerEnd {
+  flex-direction: row;
+}
+.footerEnd {
+  flex: 1;
+  gap: 59px;
+  color: var(--primary-contrast);
+}
+.footer {
+  position: relative;
+  background-color: var(--color-gray-200);
+  width: 100%;
+  padding: var(--padding-5xl) 90px;
+  box-sizing: border-box;
+  gap: 80px;
+  border-top: 1px;
+  border-top-style: solid;
+  border-top-color: #333;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: #b3b3b3;
+  font-family: var(--components-button-large);
+}
+@media screen and (max-width: 1200px) {
+  .barterOnline2nd {
+    font-size: var(--font-size-2xs);
+  }
+  .footerStart {
+    width: 329px;
+  }
+  .footer {
+    padding: var(--padding-md) var(--padding-xs);
+    box-sizing: border-box;
+    border-top: 1px;
+    border-top-style: solid;
+    border-top-color: #333;
+    gap: var(--gap-lg);
+  }
+}
+@media screen and (max-width: 768px) {
+  .footerEnd {
+    flex: unset;
+    align-self: stretch;
+  }
+  .footer {
+    flex-direction: column;
+    padding: var(--padding-5xl);
+    box-sizing: border-box;
+    gap: var(--gap-lg);
+    margin-top: 0px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .footerStart {
+    background-color: var(--color-gray-200);
+  }
+  .footerCol1,
+  .footerCol4 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .footerEnd {
+    flex-direction: column;
+    gap: var(--gap-8xl);
+  }
+  .footer {
+    padding: var(--padding-3xl) var(--padding-md);
+    box-sizing: border-box;
+  }
+}

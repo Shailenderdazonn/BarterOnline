@@ -1,0 +1,228 @@
+.downloader1Icon {
+  position: absolute;
+  width: calc(100% - 162px);
+  top: 0;
+  right: 0;
+  left: 162px;
+  max-width: 100%;
+  overflow: hidden;
+  height: 900px;
+  object-fit: cover;
+}
+.getAccessTo,
+.signUp2 {
+  position: relative;
+  line-height: 34px;
+  font-family: var(--font-lato);
+  text-align: left;
+}
+.signUp2 {
+  align-self: stretch;
+  font-size: var(--font-size-10xl);
+  color: var(--color-darkslateblue-200);
+}
+.getAccessTo {
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray-200);
+}
+.getAccessTo,
+.input,
+.signUp1 {
+  align-self: stretch;
+}
+.signUp1 {
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-3xl) 0 0;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+.input {
+  border: 0;
+  background-color: transparent;
+}
+.formTextTermsOfUsePriva,
+.name {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.name {
+  display: flex;
+}
+.formTextTermsOfUsePriva {
+  display: none;
+}
+.submit {
+  position: absolute;
+  height: calc(100% - 27px);
+  width: calc(100% - 18.88px);
+  top: 13.5px;
+  left: 9.52px;
+  font-size: var(--font-size-base);
+  font-family: var(--components-button-large);
+  color: var(--primary-contrast);
+  text-align: center;
+  display: inline-block;
+}
+.formSignButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-lightseagreen);
+  position: relative;
+  border-radius: var(--br-3xs);
+  width: 494px;
+  height: 47px;
+  flex-shrink: 0;
+}
+.formSignButton:hover {
+  background-color: var(--color-tomato);
+}
+.formFields {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+.alreadyHaveAn {
+  text-decoration: none;
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 34px;
+  font-family: var(--font-lato);
+  color: var(--color-darkslateblue-200);
+  text-align: center;
+  display: inline-block;
+  height: 22px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.form,
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.form {
+  align-self: stretch;
+  border-radius: var(--br-xl);
+  background-color: var(--primary-contrast);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+  padding: var(--padding-2xl) var(--padding-3xl);
+  align-items: flex-start;
+  gap: var(--gap-sm);
+}
+.loginForm {
+  width: 594.04px;
+  padding: var(--padding-xs);
+  box-sizing: border-box;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative !important;
+  left: auto !important;
+}
+.mainContainer,
+.mainContentContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.mainContentContainer {
+  flex: 1;
+  width: 765px;
+  padding: var(--padding-5xl) var(--padding-12xl) var(--padding-5xl)
+    var(--padding-13xl);
+  box-sizing: border-box;
+  justify-content: center;
+}
+.mainContainer {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(90deg, #000, rgba(0, 0, 0, 0.1) 56.77%);
+  height: 900px;
+  justify-content: flex-start;
+}
+.mainSection {
+  align-self: stretch;
+  position: relative;
+  height: 900px;
+  flex-shrink: 0;
+  mix-blend-mode: multiply;
+  padding: 10%;
+}
+.signUp {
+  position: relative;
+  background-color: var(--primary-contrast);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.profilePicinput{
+  padding-top: 2%;
+}
+@media screen and (max-width: 1200px) {
+  .mainContentContainer {
+    padding-left: var(--padding-10xl);
+    padding-right: var(--padding-10xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 768px) {
+  .downloader1Icon {
+    width: 680px;
+  }
+  .formSignButton {
+    width: 100%;
+  }
+  .loginForm {
+    padding: var(--padding-md) 0;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative !important;
+    left: auto !important;
+    width: 90%;
+  }
+  .mainContentContainer {
+    width: 680px;
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-14xl);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .mainSection {
+    height: 869px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .loginForm,
+  .mainContentContainer {
+    padding-left: var(--padding-md);
+    padding-right: var(--padding-md);
+    box-sizing: border-box;
+  }
+  .loginForm {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative !important;
+    left: auto !important;
+    width: 100% !important;
+  }
+  .mainContentContainer {
+    width: 428px;
+  }
+}

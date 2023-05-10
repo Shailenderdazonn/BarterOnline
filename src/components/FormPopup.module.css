@@ -1,0 +1,167 @@
+.closeButtonChild {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 41.99px;
+  height: 41.99px;
+}
+
+.closeButtonInner,
+.closeButtonItem {
+  position: absolute;
+  top: 13.56px;
+  right: 13.56px;
+  width: 14.17px;
+  height: 14.17px;
+}
+
+.closeButtonInner {
+  right: 14.26px;
+}
+
+.closeButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  position: relative;
+  width: 41.99px;
+  height: 41.99px;
+  flex-shrink: 0;
+}
+
+.shareYourDetails {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-4xl);
+  line-height: 36px;
+  font-family: var(--font-changa-one);
+  color: var(--color-darkslategray-200);
+  text-align: left;
+}
+
+.suggestAdsThat {
+  position: relative;
+  font-size: var(--font-size-xl);
+  line-height: 34px;
+  font-family: var(--components-button-large);
+  color: var(--color-slategray-200);
+  text-align: left;
+}
+
+.formText,
+.input,
+.suggestAdsThat {
+  align-self: stretch;
+}
+
+.formText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-9xs);
+}
+
+.input {
+  border: 0;
+  background-color: transparent;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.formFields,
+.input3,
+.name {
+  align-self: stretch;
+}
+
+.formFields {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-6xs);
+}
+
+.submit {
+  position: absolute;
+  width: calc(100% - 18.88px);
+  top: 13.5px;
+  left: 9.52px;
+  font-size: var(--font-size-base);
+  font-family: var(--components-button-large);
+  color: var(--primary-contrast);
+  text-align: center;
+  display: inline-block;
+}
+
+.formSubmitButton {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-lightseagreen);
+  position: relative;
+  border-radius: var(--br-3xs);
+  width: 222px;
+  height: 46px;
+  flex-shrink: 0;
+}
+
+.formSubmitButton:hover {
+  background-color: var(--color-tomato);
+}
+
+.form {
+  align-self: stretch;
+  flex: 1;
+  border-radius: var(--br-xl);
+  background-color: var(--primary-contrast);
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-2xl) var(--padding-3xl);
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-sm);
+}
+
+.popupSwissWinterImage {
+  position: relative;
+  width: 1000px;
+  height: 680.33px;
+  flex-shrink: 0;
+  object-fit: cover;
+  display: none;
+}
+
+.formPopup {
+  position: relative;
+  background-color: var(--primary-contrast);
+  width: 1034px;
+  height: 655.99px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  padding: var(--padding-lg) var(--padding-2xs);
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: flex-start;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.formPopupMain {
+  padding: var(--padding-lg) var(--padding-2xs);
+}
+
+@media screen and (max-width: 1200px) {
+  .formSubmitButton {
+    background-color: var(--color-blueviolet-100);
+  }
+}

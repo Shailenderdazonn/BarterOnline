@@ -1,0 +1,272 @@
+.calloutImagesChild,
+.calloutSwitzerlandSunsetIma {
+  align-self: stretch;
+  position: relative;
+  width: auto;
+  overflow: hidden;
+  object-fit: cover;
+}
+.calloutImages{
+  height:65vh;
+}
+
+.calloutImagesChild {
+  flex: 1;
+  border-radius: var(--br-3xl);
+  object-fit: contain;
+}
+
+.calloutSwitzerlandSunsetIma {
+  border-radius: var(--br-md);
+  height: 267.29px;
+  flex-shrink: 0;
+}
+
+.calloutImages,
+.calloutImagesColumn {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-xs);
+}
+
+.calloutImages {
+  flex-direction: row;
+  gap: var(--gap-2xs);
+}
+
+.iphone13Pro {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-5xl);
+  letter-spacing: 0.02em;
+  line-height: 34px;
+  font-family: var(--font-alegreya);
+}
+
+.mobilePhone {
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.alberta {
+  position: relative;
+  letter-spacing: -0.04em;
+}
+
+.albertaWrapper,
+.mobilePhoneParent {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.albertaWrapper {
+  border-radius: var(--br-xs);
+  background-color: var(--color-whitesmoke-300);
+  padding: var(--padding-13xs) var(--padding-11xs);
+  align-items: flex-start;
+  font-size: var(--font-size-xs);
+  color: var(--color-dimgray-300);
+}
+
+.mobilePhoneParent {
+  align-self: stretch;
+  align-items: center;
+  gap: var(--gap-7xs);
+  font-size: var(--font-size-base);
+  color: var(--studio-darkmode-maincta-457eff);
+  font-family: var(--font-source-code-pro);
+}
+
+.b,
+.calloutText {
+  align-self: stretch;
+  position: relative;
+}
+
+.b {
+  font-size: var(--font-size-4xl);
+  letter-spacing: 0.01em;
+  line-height: 28px;
+}
+
+.calloutText {
+  line-height: 37px;
+  color: var(--color-darkslategray-200);
+}
+
+.avatarIcon,
+.frameChild {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.frameChild {
+  border-top: 0.7px solid var(--studio-lightmode-lightseparator-ecf0f6);
+  box-sizing: border-box;
+  width: 396.7px;
+  height: 0.7px;
+}
+
+.avatarIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+.annaRos,
+.postedJustNow {
+  position: relative;
+  display: inline-block;
+  width: 145.47px;
+}
+
+.annaRos {
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+
+.postedJustNow {
+  font-size: var(--font-size-xs);
+  font-family: var(--components-button-large);
+  color: var(--studio-darkmode-normalsolid-icons-96a2be);
+}
+
+.articleAuthor,
+.authorText,
+.lineParent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-12xs);
+}
+
+.articleAuthor,
+.lineParent {
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-6xs);
+}
+
+.lineParent {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 13px 0;
+  align-items: flex-start;
+  gap: var(--gap-2xs);
+  font-size: var(--font-size-lg);
+  color: var(--color-dimgray-300);
+  font-family: var(--font-source-code-pro);
+}
+
+.chatWithSeller {
+  text-decoration: none;
+  color: #FFF;
+  position: relative;
+}
+
+.chat {
+  text-decoration: none;
+  border-radius: var(--br-3xs);
+  background-color: var(--color-lightseagreen);
+  display: flex;
+  flex-direction: row;
+  padding: var(--padding-xs);
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: center;
+  color: var(--primary-contrast);
+}
+
+.chat:hover {
+  color: #000;
+  background-color: var(--color-tomato);
+  
+}
+
+.calloutCopywriting {
+  width: 498px;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding: var(--padding-8xs) 0 36px var(--padding-6xl);
+  box-sizing: border-box;
+  gap: var(--gap-7xs);
+}
+
+.calloutCopywriting,
+.calloutSection,
+.productsDetail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.calloutSection {
+  align-self: stretch;
+  background-color: var(--primary-contrast);
+  flex-direction: row;
+  padding: var(--padding-3xl);
+}
+
+.productsDetail {
+  position: relative;
+  background-color: #f2f4f5;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  text-align: left;
+  font-size: var(--font-size-2xl);
+  color: var(--studio-darkmode-exportbg-1a202e);
+  font-family: var(--components-button-large);
+}
+/* 
+.productid {
+  display: none;
+} */
+
+@media screen and (max-width: 1200px) {
+  .calloutImagesColumn {
+    width: 50% !important;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .calloutSwitzerlandSunsetIma {
+    width: 100%;
+    height: auto;
+  }
+
+  .calloutImagesColumn {
+    width: 50% !important;
+  }
+
+  .calloutImages {
+    flex: unset;
+    align-self: stretch;
+  }
+
+  .calloutCopywriting {
+    width: 100%;
+    padding-left: 0;
+    padding-top: var(--padding-5xl);
+    padding-bottom: var(--padding-12xs);
+    box-sizing: border-box;
+  }
+
+  .calloutSection {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .calloutImages {
+    width: 96% !important;
+  }
+}

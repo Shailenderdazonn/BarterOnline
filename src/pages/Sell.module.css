@@ -1,0 +1,434 @@
+.postYourAd {
+  flex: 1;
+  position: relative;
+  font-size: 35px;
+  font-family: var(--font-lato);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+}
+.heading {
+  align-self: stretch;
+  /* display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start; */
+}
+.userName{
+  font-size: x-large;
+  font-variant-caps: petite-caps;
+}
+.userid{
+  display: none;
+}
+.success{
+  color: #fff;
+  font-size: xx-large;
+  background-color: green;
+  border: 2px solid aqua;
+  padding: 2%;
+  }
+.categoryDropdown {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.titleOfAd {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-4xl);
+  font-weight: 500;
+  font-family: var(--font-lato);
+  color: var(--color-darkslategray-100);
+  text-align: left;
+}
+.inputdefault {
+  border: 1px solid rgb(118, 118, 118);
+  background-color: transparent;
+  align-self: stretch;
+}
+.titleOfAdParent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xl);
+}
+.dropdownbutton {
+  flex: 1;
+}
+.frameParent,
+.selectAdCategoryParent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.selectAdCategoryParent {
+  align-self: stretch;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--gap-3xl);
+}
+.frameParent {
+  flex-direction: row;
+  gap: var(--gap-12xl);
+}
+.autocompletebasic,
+.frameParent {
+  align-self: stretch;
+}
+.confirmYourLoactionParent,
+.itemPriceCadParent {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-3xl);
+}
+.descriptionWrapper {
+  align-self: stretch;
+}
+.descriptionWrapper,
+.frameContainer,
+.uploadImagesWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.frameContainer {
+  align-self: stretch;
+  gap: var(--gap-3xl);
+}
+.uploadImagesWrapper {
+  width: 100%;
+}
+.maximumUploadFile,
+.selectFilesButton {
+  align-self: stretch;
+  position: relative;
+  height: 61.19px;
+  flex-shrink: 0;
+}
+.maximumUploadFile {
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+  color: #b6b6b7;
+  text-align: left;
+  display: inline-block;
+  height: 17px;
+}
+.adsPostInner,
+.selectFilesButtonParent {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.selectFilesButtonParent {
+  flex: 1;
+  border-radius: var(--br-2xs);
+  background-color: var(--primary-contrast);
+  border: 1px solid #d9d9d9;
+  flex-direction: column;
+  padding: var(--padding-2xs) 2vw;
+  align-items: center;
+  gap: var(--gap-9xs);
+}
+.adsPostInner {
+  flex-direction: row;
+  align-items: flex-end;
+}
+.makeYourAd,
+.premiumAdOptions {
+  position: relative;
+  font-family: var(--font-lato);
+  text-align: left;
+}
+.makeYourAd {
+  flex: 1;
+  font-size: var(--font-size-4xl);
+  color: var(--color-darkslategray-100);
+}
+.premiumAdOptions {
+  align-self: stretch;
+  font-size: var(--font-size-base);
+  color: var(--color-darkgray-300);
+}
+.regularAd {
+  color: var(--color-dimgray-100);
+}
+.span {
+  color: var(--color-darkgray-300);
+}
+.regularAd0000Container {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+  text-align: left;
+}
+.regularAd0000Wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.checkboxdefaultCheckboxOnlParent {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-xl);
+}
+.leftSide,
+.markLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+}
+.markLeft {
+  align-self: stretch;
+  overflow: hidden;
+  padding: var(--padding-14xs) 0;
+}
+.leftSide {
+  flex: 1;
+  background-color: var(--primary-contrast);
+  padding: var(--padding-2xl) var(--padding-xl);
+}
+.directBankTransfer,
+.whatIsMode {
+  position: relative;
+  font-family: var(--font-lato);
+  text-align: left;
+}
+.whatIsMode {
+  align-self: stretch;
+  font-size: var(--font-size-2xl);
+  color: var(--color-darkslategray-100);
+}
+.directBankTransfer {
+  flex: 1;
+  font-size: var(--font-size-base);
+  color: var(--color-dimgray-100);
+}
+.directBankTransferWrapper,
+.frameDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.directBankTransferWrapper {
+  flex: 1;
+  align-items: flex-start;
+}
+.frameDiv {
+  align-self: stretch;
+  align-items: center;
+  gap: var(--gap-lg);
+}
+.checkboxdefaultCheckboxOnl {
+  display: none;
+}
+.creditCard {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: var(--font-size-base);
+  font-family: var(--font-lato);
+  color: var(--color-dimgray-100);
+  text-align: left;
+  display: inline-block;
+  width: 89.65px;
+  height: 21.34px;
+}
+.creditCardWrapper {
+  flex: 1;
+  position: relative;
+  height: 21.34px;
+}
+.makeYourAdFeatured,
+.rightSide {
+  display: flex;
+  justify-content: flex-start;
+}
+.rightSide {
+  flex: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-xs);
+}
+.makeYourAdFeatured {
+  align-self: stretch;
+  background-color: var(--primary-contrast);
+  overflow: hidden;
+  flex-direction: row;
+  padding: 0 var(--padding-6xl);
+  align-items: center;
+  gap: 127px;
+}
+.termsCondition {
+  color: var(--color-black);
+}
+.byClickYouContainer1 {
+  padding-left: 20px;
+  line-break: anywhere;
+}
+.byClickYouContainer {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  font-size: var(--font-size-base);
+  display: flex;
+  font-family: var(--font-lato);
+  text-align: center;
+  align-items: center;
+}
+.byClickYouMustAgreeWithOWrapper {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.checkboxdefaultCheckboxOnlParent3 {
+  width: 37vw;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.postYourAd1 {
+  position: relative;
+  font-size: var(--components-button-large-size);
+  letter-spacing: 0.46px;
+  line-height: 26px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: var(--components-button-large);
+  color: var(--primary-contrast);
+  text-align: center;
+  display: inline-block;
+  width: 146.98px;
+}
+.dashboardClick{
+  margin-top:2% ;
+  text-align: center;
+  padding: 2% 2%;
+  background-color: rgb(118, 118, 118);
+  border: 2px solid var(--color-lightseagreen);
+  border-radius: 5%;
+  cursor: pointer;
+}
+.postAd {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--color-lightseagreen);
+  border-radius: var(--br-3xs);
+  width: 164px;
+  height: 56px;
+  flex-shrink: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+.postAd:hover {
+  background-color: var(--color-tomato);
+}
+.frameParent1 {
+  align-self: stretch;
+  padding: 0 var(--padding-6xl) var(--padding-xl);
+  align-items: center;
+  gap: var(--gap-4xl);
+}
+.adsPost,
+.frameParent1,
+.sell {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.adsPost {
+  align-self: stretch;
+  padding: var(--padding-3xl) var(--padding-6xl) 0;
+  align-items: center;
+  gap: var(--gap-7xl);
+}
+.sell {
+  position: relative;
+  background-color: var(--primary-contrast);
+  width: 100%;
+  overflow: hidden;
+  align-items: flex-start;
+}
+@media screen and (max-width: 1200px) {
+  .itemPriceCadParent,
+  .selectAdCategoryParent {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 768px) {
+  .selectAdCategoryParent,
+  .titleOfAdParent {
+    flex: unset;
+    align-self: stretch;
+  }
+  .selectAdCategoryParent {
+    flex-direction: column;
+  }
+  .frameParent {
+    flex-direction: column;
+    gap: var(--gap-5xl);
+  }
+  .confirmYourLoactionParent,
+  .itemPriceCadParent {
+    flex: unset;
+    align-self: stretch;
+  }
+  .frameContainer {
+    gap: var(--gap-3xl);
+  }
+  .selectFilesButtonParent {
+    flex: unset;
+    align-self: stretch;
+  }
+  .adsPostInner {
+    flex-direction: column;
+  }
+  .leftSide {
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+  .leftSide,
+  .rightSide {
+    flex: unset;
+    align-self: stretch;
+  }
+  .makeYourAdFeatured {
+    flex-direction: column;
+    gap: var(--gap-5xl);
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+  .postAd {
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 428px) {
+  .postAd {
+    width: 100% !important;
+  }
+}
