@@ -9,6 +9,7 @@
   height: 727px;
   object-fit: cover;
 }
+
 .getAccessTo,
 .login1 {
   align-self: stretch;
@@ -19,10 +20,12 @@
   color: var(--color-darkslateblue-200);
   text-align: left;
 }
+
 .getAccessTo {
   font-size: var(--font-size-base);
   color: var(--color-darkgray-200);
 }
+
 .formTextTermsOfUsePriva {
   align-self: stretch;
   display: flex;
@@ -32,11 +35,13 @@
   justify-content: flex-start;
   gap: var(--gap-9xs);
 }
+
 .input {
   border: 0;
   background-color: transparent;
   align-self: stretch;
 }
+
 .emailmobileNo {
   align-self: stretch;
   display: flex;
@@ -44,15 +49,18 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .byContinuingYou,
 .termsOfUse {
   font-family: var(--font-lato);
   color: var(--color-slategray-200);
 }
+
 .termsOfUse {
   font-weight: 500;
   color: var(--color-black);
 }
+
 .byContinuingYouContainer {
   align-self: stretch;
   position: relative;
@@ -60,6 +68,7 @@
   line-height: 34px;
   text-align: left;
 }
+
 .formTextTermsOfUsePriva1 {
   align-self: stretch;
   display: none;
@@ -67,6 +76,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .submit {
   position: absolute;
   height: calc(100% - 27px);
@@ -78,10 +88,12 @@
   text-align: center;
   display: inline-block;
 }
+
 .submit,
 .submit:hover {
   color: var(--primary-contrast);
 }
+
 .formLoginButton {
   cursor: pointer;
   border: 0;
@@ -93,9 +105,11 @@
   height: 47px;
   flex-shrink: 0;
 }
+
 .formLoginButton:hover {
   background-color: var(--color-tomato);
 }
+
 .formFields {
   align-self: stretch;
   display: flex;
@@ -104,10 +118,12 @@
   justify-content: flex-start;
   gap: var(--gap-6xs);
 }
+
 .or1,
 .submit1 {
   text-align: center;
 }
+
 .or1 {
   align-self: stretch;
   position: relative;
@@ -116,6 +132,7 @@
   font-family: var(--font-lato);
   color: var(--color-slategray-200);
 }
+
 .submit1 {
   position: absolute;
   height: calc(100% - 27px);
@@ -127,6 +144,7 @@
   color: var(--color-black);
   display: inline-block;
 }
+
 .signUpButton {
   cursor: pointer;
   border: 1px solid var(--color-black);
@@ -139,17 +157,20 @@
   height: 47px;
   flex-shrink: 0;
 }
+
 .signUpButton:hover {
   background-color: var(--color-slategray-200);
   border: 1px solid var(--primary-contrast);
   box-sizing: border-box;
 }
+
 .form,
 .loginForm {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .form {
   align-self: stretch;
   border-radius: var(--br-xl);
@@ -159,6 +180,7 @@
   align-items: flex-start;
   gap: var(--gap-sm);
 }
+
 .loginForm {
   width: 594.04px;
   padding: var(--padding-xs);
@@ -169,12 +191,14 @@
   position: relative !important;
   left: auto !important;
 }
+
 .mainContainer,
 .mainContentContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
+
 .mainContentContainer {
   width: 765px;
   height: 581px;
@@ -183,6 +207,7 @@
   box-sizing: border-box;
   justify-content: center;
 }
+
 .mainContainer {
   position: absolute;
   width: 100%;
@@ -193,6 +218,7 @@
   height: 727px;
   justify-content: flex-start;
 }
+
 .mainSection {
   align-self: stretch;
   position: relative;
@@ -201,6 +227,7 @@
   mix-blend-mode: multiply;
   padding: 10%;
 }
+
 .login {
   position: relative;
   background-color: var(--primary-contrast);
@@ -212,6 +239,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 @media screen and (max-width: 1200px) {
   .mainContentContainer {
     padding-left: var(--padding-10xl);
@@ -219,15 +247,18 @@
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 768px) {
   .downloader1Icon {
     width: 768px;
     background-position: center;
   }
+
   .formLoginButton,
   .signUpButton {
     width: 100%;
   }
+
   .loginForm {
     padding: var(--padding-md) 0;
     box-sizing: border-box;
@@ -237,6 +268,7 @@
     left: auto !important;
     width: 90%;
   }
+
   .mainContentContainer {
     width: 680px;
     padding-left: var(--padding-5xl);
@@ -244,17 +276,21 @@
     box-sizing: border-box;
     max-width: 100%;
   }
+
   .mainSection {
     height: 695px;
   }
 }
+
 @media screen and (max-width: 428px) {
+
   .loginForm,
   .mainContentContainer {
     padding-left: var(--padding-md);
     padding-right: var(--padding-md);
     box-sizing: border-box;
   }
+
   .loginForm {
     padding-top: var(--padding-7xl);
     margin-left: auto;
@@ -263,7 +299,13 @@
     left: auto !important;
     width: 100% !important;
   }
+
   .mainContentContainer {
     width: 428px;
+  }
+
+  .signUpButton {
+    height: 59px;
+
   }
 }

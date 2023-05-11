@@ -3,65 +3,82 @@
     transform: translateX(-50px) rotate(-540deg);
     opacity: 0;
   }
+
   to {
     transform: translateX(0) rotate(0deg);
     opacity: 1;
   }
 }
+
 @keyframes scale-up {
   0% {
     transform: scale(0.5);
   }
+
   to {
     transform: scale(1);
   }
 }
+
 @keyframes jello-horizontal {
+
   0%,
   to {
     transform: scale3d(1, 1, 1);
   }
+
   30% {
     transform: scale3d(1.25, 0.75, 1);
   }
+
   40% {
     transform: scale3d(0.75, 1.25, 1);
   }
+
   50% {
     transform: scale3d(1.15, 0.85, 1);
   }
+
   65% {
     transform: scale3d(0.95, 1.05, 1);
   }
+
   75% {
     transform: scale3d(1.05, 0.95, 1);
   }
 }
+
 @keyframes bounce-top {
   0% {
     transform: translateY(-45px);
     animation-timing-function: ease-in;
     opacity: 1;
   }
+
   24% {
     opacity: 1;
   }
+
   40% {
     transform: translateY(-24px);
     animation-timing-function: ease-in;
   }
+
   65% {
     transform: translateY(-12px);
     animation-timing-function: ease-in;
   }
+
   82% {
     transform: translateY(-6px);
     animation-timing-function: ease-in;
   }
+
   93% {
     transform: translateY(-4px);
     animation-timing-function: ease-in;
   }
+
   25%,
   55%,
   75%,
@@ -69,30 +86,37 @@
     transform: translateY(0);
     animation-timing-function: ease-out;
   }
+
   to {
     transform: translateY(0);
     animation-timing-function: ease-out;
     opacity: 1;
   }
 }
+
 @keyframes fade-in {
   0% {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
-.AllCategoriesPage{
+
+.AllCategoriesPage {
   padding-bottom: 7vh;
   width: 100%;
 }
-.dasdn{
+
+.dasdn {
   display: flex;
 }
-.link{
+
+.link {
   text-decoration: none;
 }
+
 .imageIcon {
   position: absolute;
   width: 100%;
@@ -104,6 +128,7 @@
   height: 640px;
   object-fit: cover;
 }
+
 .letsUsHelp {
   align-self: stretch;
   position: relative;
@@ -114,20 +139,24 @@
 .letsUsHelp.animate {
   animation: 2s ease 0s 1 normal forwards roll-in-left;
 }
+
 .searchFromOver,
 .searchMobilesBikes {
   position: relative;
   font-family: var(--components-button-large);
 }
+
 .searchFromOver {
   align-self: stretch;
   font-size: var(--font-size-4xl);
   line-height: 32px;
   opacity: 1;
 }
+
 .searchFromOver.animate {
   animation: 2s ease 0s 1 normal forwards scale-up;
 }
+
 .searchMobilesBikes {
   flex: 1;
   font-size: var(--font-size-2xl);
@@ -136,6 +165,7 @@
   color: #303030;
   text-align: left;
 }
+
 .formTitleGroup {
   align-self: stretch;
   overflow: hidden;
@@ -145,14 +175,17 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .inputdefault {
   background-color: transparent;
   flex: 1;
 }
+
 .location {
   align-self: stretch;
   flex: 1;
 }
+
 .formInputsRow,
 .inputsRow {
   display: flex;
@@ -160,14 +193,17 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .inputsRow {
   flex: 1;
   padding: var(--padding-12xs);
   gap: var(--gap-6xs);
 }
+
 .formInputsRow {
   align-self: stretch;
 }
+
 .search {
   position: relative;
   font-size: var(--components-button-large-size);
@@ -181,6 +217,7 @@
   display: inline-block;
   width: 146.98px;
 }
+
 .searchButton {
   cursor: pointer;
   border: 0;
@@ -195,21 +232,25 @@
   justify-content: center;
   transition: 0.3s;
 }
+
 .searchButton:hover {
   background-color: var(--color-tomato);
 }
+
 .buttonGroup,
-.searchButton{
+.searchButton {
   display: flex;
   flex-direction: column;
 }
+
 .mainButton {
   width: 100vw;
   display: flex;
-  flex-direction:initial;
+  flex-direction: initial;
   justify-content: center;
   padding-top: 50px;
 }
+
 .buttonGroup {
   margin: 0px 50px;
   cursor: pointer;
@@ -220,9 +261,11 @@
   align-items: center;
   justify-content: center;
 }
+
 .buttonGroup:hover {
   mix-blend-mode: normal;
 }
+
 .searchForm {
   align-self: stretch;
   border-radius: var(--br-lg);
@@ -232,17 +275,20 @@
   justify-content: flex-start;
   gap: var(--gap-11xs);
 }
+
 .searchContainer,
 .title {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .title {
   align-self: stretch;
   justify-content: flex-start;
   gap: 5px;
 }
+
 .searchContainer {
   position: absolute;
   top: 0;
@@ -253,12 +299,14 @@
   box-sizing: border-box;
   justify-content: center;
 }
+
 .main {
   align-self: stretch;
   position: relative;
   height: 640px;
   flex-shrink: 0;
 }
+
 .mainSection {
   align-self: stretch;
   display: flex;
@@ -269,6 +317,7 @@
   color: var(--primary-contrast);
   font-family: var(--font-baloo-bhai);
 }
+
 .recommendedAds {
   position: relative;
   line-height: 40px;
@@ -279,9 +328,11 @@
   width: 342px;
   opacity: 1;
 }
+
 .recommendedAds.animate {
   animation: 2s ease 0s 1 normal forwards jello-horizontal;
 }
+
 .recommendedAdsText {
   align-self: stretch;
   display: flex;
@@ -290,6 +341,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .frameChild {
   align-self: stretch;
   position: relative;
@@ -299,6 +351,7 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .mobilePhone {
   color: var(--bs-link-color);
   width: 80%;
@@ -306,16 +359,19 @@
   text-transform: uppercase;
   font-weight: 600;
 }
+
 .alberta {
   position: relative;
   letter-spacing: -0.04em;
 }
+
 .albertaWrapper,
 .mobilePhoneParent {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .albertaWrapper {
   border-radius: var(--br-xs);
   background-color: var(--color-whitesmoke-300);
@@ -324,12 +380,14 @@
   font-size: var(--font-size-xs);
   color: var(--color-dimgray-300);
 }
+
 .mobilePhoneParent {
   height: 3em;
   align-self: stretch;
   align-items: center;
   gap: var(--gap-7xs);
 }
+
 .iphone13Pro {
   position: relative;
   font-size: var(--font-size-5xl);
@@ -338,11 +396,13 @@
   font-family: var(--font-alegreya);
   color: var(--studio-darkmode-exportbg-1a202e);
 }
+
 .b,
 .frameDiv,
 .iphone13Pro {
   align-self: stretch;
 }
+
 .frameDiv {
   display: flex;
   flex-direction: column;
@@ -350,11 +410,13 @@
   justify-content: flex-start;
   gap: var(--gap-11xs);
 }
+
 .b {
   position: relative;
   letter-spacing: 0.01em;
   line-height: 28px;
 }
+
 .frameContainer,
 .wrapper {
   align-self: stretch;
@@ -363,46 +425,55 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .wrapper {
   color: var(--studio-darkmode-exportbg-1a202e);
   font-family: var(--components-button-large);
 }
+
 .frameContainer {
   gap: var(--gap-8xs);
 }
+
 .avatarIcon,
 .frameItem {
   position: relative;
   flex-shrink: 0;
 }
+
 .frameItem {
   border-top: 0.7px solid var(--studio-lightmode-lightseparator-ecf0f6);
   box-sizing: border-box;
   width: 396.7px;
   height: 0.7px;
 }
+
 .avatarIcon {
   width: 40px;
   height: 40px;
   object-fit: cover;
 }
+
 .annaRos,
 .postedJustNow {
   position: relative;
   display: inline-block;
   width: 145.47px;
 }
+
 .annaRos {
   letter-spacing: -0.04em;
   font-weight: 600;
   width: 100%;
   text-transform: capitalize;
 }
+
 .postedJustNow {
   font-size: var(--font-size-xs);
   font-family: var(--components-button-large);
   color: var(--studio-darkmode-normalsolid-icons-96a2be);
 }
+
 .articleAuthor,
 .authorText {
   display: flex;
@@ -411,12 +482,14 @@
   justify-content: flex-start;
   gap: var(--gap-12xs);
 }
+
 .articleAuthor {
   padding: 3% 6%;
   flex-direction: row;
   align-items: center;
   gap: var(--gap-6xs);
 }
+
 .frameGroup,
 .lineParent {
   align-self: stretch;
@@ -425,22 +498,26 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .lineParent {
   gap: var(--gap-4xs);
   font-size: var(--font-size-lg);
   color: var(--color-dimgray-300);
 }
+
 .frameGroup {
   flex: 1;
   padding: var(--padding-3xs);
   gap: var(--gap-2xl);
 }
+
 .frameInner,
 .rectangleParent {
   align-self: stretch;
   overflow: hidden;
   flex-shrink: 0;
 }
+
 .rectangleParent {
   border-radius: var(--br-lg);
   background-color: var(--primary-contrast);
@@ -453,6 +530,7 @@
   justify-content: flex-start;
   gap: var(--gap-11xs);
 }
+
 .frameInner {
   position: relative;
   max-width: 100%;
@@ -460,12 +538,14 @@
   object-fit: cover;
   display: none;
 }
+
 .carsVehiclesParent,
 .novaScotiaWrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
 }
+
 .novaScotiaWrapper {
   border-radius: var(--br-3xs);
   background-color: var(--color-whitesmoke-300);
@@ -474,11 +554,13 @@
   font-size: var(--font-size-xs);
   color: var(--color-dimgray-300);
 }
+
 .carsVehiclesParent {
   align-self: stretch;
   align-items: center;
   gap: var(--gap-6xs);
 }
+
 .lineDiv {
   position: relative;
   border-top: 0.7px solid var(--studio-lightmode-lightseparator-ecf0f6);
@@ -487,6 +569,7 @@
   height: 0.7px;
   flex-shrink: 0;
 }
+
 .frameParent1,
 .lineGroup {
   display: flex;
@@ -495,19 +578,23 @@
   justify-content: flex-start;
   gap: var(--gap-4xs);
 }
+
 .lineGroup {
   font-size: var(--font-size-lg);
   color: var(--color-dimgray-300);
 }
+
 .frameParent1 {
   align-self: stretch;
   padding: var(--padding-3xs);
 }
+
 .frameChild3,
 .rectangleGroup {
   box-sizing: border-box;
   flex-shrink: 0;
 }
+
 .rectangleGroup {
   border-radius: var(--br-lg);
   background-color: var(--primary-contrast);
@@ -520,12 +607,14 @@
   justify-content: flex-start;
   gap: var(--gap-11xs);
 }
+
 .frameChild3 {
   position: relative;
   border-top: 0.7px solid var(--studio-lightmode-lightseparator-ecf0f6);
   width: 330.7px;
   height: 0.7px;
 }
+
 .frameParent,
 .frameParent4,
 .rectangleContainer {
@@ -533,17 +622,20 @@
   display: flex;
   align-items: flex-start;
 }
+
 .frameParent4 {
   flex: 1;
   flex-direction: column;
   padding: var(--padding-3xs);
   justify-content: space-between;
 }
+
 .frameParent,
 .rectangleContainer {
   background-color: var(--primary-contrast);
   justify-content: space-around;
 }
+
 .rectangleContainer {
   border-radius: var(--br-lg);
   border: 0.7px solid var(--studio-lightmode-midseparator-dee3eb);
@@ -554,6 +646,7 @@
   flex-direction: column;
   gap: var(--gap-11xs);
 }
+
 .frameParent {
   flex-direction: row;
   padding: var(--padding-3xl) var(--padding-6xl);
@@ -561,6 +654,7 @@
   font-size: var(--font-size-base);
   font-family: var(--font-source-code-pro);
 }
+
 .viewMore {
   text-decoration: none;
   position: relative;
@@ -574,9 +668,11 @@
   width: 100%;
   cursor: pointer;
 }
+
 .viewMore:hover {
   color: var(--color-lightseagreen);
 }
+
 .featuredAds {
   align-self: stretch;
   background-color: var(--primary-contrast);
@@ -588,6 +684,7 @@
   text-align: left;
   color: var(--studio-darkmode-maincta-457eff);
 }
+
 .searchAdsBy {
   position: relative;
   line-height: 40px;
@@ -596,9 +693,11 @@
   -webkit-text-fill-color: transparent;
   opacity: 1;
 }
+
 .searchAdsBy.animate {
   animation: 2s ease 0s 1 normal forwards bounce-top;
 }
+
 .title1 {
   align-self: stretch;
   display: flex;
@@ -606,6 +705,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .cardimageIcon {
   position: relative;
   width: 375px;
@@ -614,16 +714,19 @@
   object-fit: cover;
   border-radius: 3%;
 }
+
 .cardTitleChild {
   align-self: stretch;
 }
+
 .allCategories1 {
   position: relative;
   display: inline-block;
-  width:max-content;
+  width: max-content;
   height: 22px;
   flex-shrink: 0;
 }
+
 .cardTitle,
 .text {
   display: flex;
@@ -631,16 +734,19 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .cardTitle {
   flex: 1;
   flex-direction: column;
   gap: var(--gap-6xl);
 }
+
 .text {
   align-self: stretch;
   flex-direction: row;
   margin-top: -30px;
 }
+
 .allCategories,
 .cardTitle2,
 .column1 {
@@ -648,17 +754,20 @@
   flex-direction: column;
   align-items: center;
 }
+
 .allCategories {
   text-decoration: none;
   width: 373.33px;
   justify-content: flex-start;
   color: inherit;
 }
+
 .cardTitle2,
 .column1 {
   justify-content: center;
   gap: var(--gap-11xl);
 }
+
 .cardTitle2 {
   width: 152px;
   flex-shrink: 0;
@@ -668,6 +777,7 @@
   justify-content: flex-start;
   gap: var(--gap-6xl);
 }
+
 .carsAndVehicles1 {
   position: relative;
   display: inline-block;
@@ -675,10 +785,12 @@
   height: 22px;
   flex-shrink: 0;
 }
+
 .category1 {
   text-align: left;
   font-size: var(--font-size-4xl);
 }
+
 .category1,
 .category2 {
   align-self: stretch;
@@ -688,18 +800,21 @@
   justify-content: space-evenly;
   gap: var(--gap-8xl);
 }
+
 .popularcategory {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   gap: var(--gap-10xl);
 }
+
 .category,
 .popularcategory,
 .viewAll {
   align-self: stretch;
   display: flex;
 }
+
 .viewAll {
   text-decoration: none;
   position: relative;
@@ -708,13 +823,14 @@
   text-transform: uppercase;
   font-weight: 700;
   color: var(--color-tomato);
-  align-items:center ;
+  align-items: center;
   justify-content: center;
   height: 95px;
   flex-shrink: 0;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 }
+
 .category {
   flex-direction: column;
   padding: 41px var(--padding-12xl) 0;
@@ -723,6 +839,7 @@
   gap: var(--gap-6xs);
   color: var(--color-darkslategray-100);
 }
+
 .leafIcon {
   position: absolute;
   margin: 0 !important;
@@ -733,16 +850,19 @@
   flex-shrink: 0;
   z-index: 0;
 }
+
 .title2,
 .title3 {
   position: relative;
 }
+
 .title3 {
   letter-spacing: 0.06em;
   line-height: 37.5px;
   font-weight: 900;
   z-index: 1;
 }
+
 .title2 {
   display: flex;
   flex-direction: row;
@@ -750,6 +870,7 @@
   justify-content: flex-start;
   gap: var(--gap-6xs);
 }
+
 .carsIcon {
   align-self: stretch;
   flex: 1;
@@ -760,6 +881,7 @@
   max-height: 100%;
   object-fit: cover;
 }
+
 .exploreNow,
 .name {
   position: relative;
@@ -771,12 +893,14 @@
   height: 27px;
   flex-shrink: 0;
 }
+
 .exploreNow {
   font-size: var(--font-size-xl);
   color: var(--color-gray-100);
   width: 113.26px;
   height: 24.75px;
 }
+
 .text6 {
   display: flex;
   flex-direction: column;
@@ -784,12 +908,14 @@
   justify-content: flex-start;
   gap: var(--gap-10xs);
 }
+
 .infoChild {
   position: relative;
   width: 24px;
   height: 0;
   flex-shrink: 0;
 }
+
 .info {
   align-self: stretch;
   display: flex;
@@ -797,6 +923,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .cars {
   text-decoration: none;
   width: 363.04px;
@@ -809,6 +936,7 @@
   gap: 21px;
   color: inherit;
 }
+
 .mobileIcon {
   align-self: stretch;
   position: relative;
@@ -819,6 +947,7 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .exploreNow1,
 .name1 {
   position: relative;
@@ -830,12 +959,14 @@
   height: 27px;
   flex-shrink: 0;
 }
+
 .exploreNow1 {
   font-size: var(--font-size-xl);
   color: var(--color-gray-100);
   width: 114.76px;
   height: 24px;
 }
+
 .moblies {
   width: 363.04px;
   height: 603.82px;
@@ -844,12 +975,14 @@
   justify-content: flex-start;
   gap: 19.5px;
 }
+
 .fashioncards,
 .moblies,
 .readEstate {
   display: flex;
   align-items: flex-start;
 }
+
 .readEstate {
   width: 367.54px;
   height: 603.82px;
@@ -858,6 +991,7 @@
   justify-content: flex-start;
   gap: var(--gap-md);
 }
+
 .fashioncards {
   align-self: stretch;
   flex-direction: row;
@@ -867,17 +1001,20 @@
   font-size: var(--font-size-4xl);
   color: var(--black);
 }
+
 .newArrivals,
 .topCategory {
   align-self: stretch;
   flex-direction: column;
 }
+
 .newArrivals {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   gap: 76px;
 }
+
 .topCategory {
   background-color: var(--primary-contrast);
   display: none;
@@ -888,6 +1025,7 @@
   font-size: var(--font-size-7xl);
   font-family: var(--font-poppins);
 }
+
 .featuredAds2 {
   position: relative;
   line-height: 40px;
@@ -898,9 +1036,11 @@
   width: 251px;
   opacity: 0;
 }
+
 .featuredAds2.animate {
   animation: 2s ease 0s 1 normal forwards fade-in;
 }
+
 .featuredAdsText {
   align-self: stretch;
   display: flex;
@@ -910,6 +1050,7 @@
   justify-content: flex-start;
   font-size: var(--font-size-8xl);
 }
+
 .iphoneChild {
   align-self: stretch;
   position: relative;
@@ -919,6 +1060,7 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .locationIcon {
   position: absolute;
   top: 0;
@@ -927,6 +1069,7 @@
   height: 18px;
   object-fit: cover;
 }
+
 .newDelhiIndia {
   position: absolute;
   top: 1.98px;
@@ -935,12 +1078,14 @@
   width: 126.35px;
   height: 14.74px;
 }
+
 .locationParent {
   position: relative;
   width: 127.35px;
   height: 18px;
   flex-shrink: 0;
 }
+
 .cardTitleInner1 {
   align-self: stretch;
   display: flex;
@@ -950,6 +1095,7 @@
   font-size: var(--font-size-3xs);
   color: var(--color-slategray-100);
 }
+
 .b3 {
   align-self: stretch;
   position: relative;
@@ -958,11 +1104,13 @@
   height: 22.11px;
   flex-shrink: 0;
 }
+
 .cardTitle6,
 .iphone {
   display: flex;
   flex-direction: column;
 }
+
 .cardTitle6 {
   align-self: stretch;
   height: 110px;
@@ -971,6 +1119,7 @@
   justify-content: flex-start;
   gap: var(--gap-lg);
 }
+
 .iphone {
   flex: 1;
   padding: var(--padding-3xs);
@@ -980,6 +1129,7 @@
   gap: var(--gap-6xs);
   width: 25% !important;
 }
+
 .iphoneParent {
   flex: 1;
   display: flex;
@@ -987,22 +1137,26 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .activaG,
 .bikesChild {
   align-self: stretch;
   position: relative;
   flex-shrink: 0;
 }
+
 .bikesChild {
   max-width: 100%;
   overflow: hidden;
   height: 185.86px;
   object-fit: cover;
 }
+
 .activaG {
   display: inline-block;
   height: 22.11px;
 }
+
 .locationIcon2 {
   position: absolute;
   top: 0.02px;
@@ -1011,6 +1165,7 @@
   height: 18px;
   object-fit: cover;
 }
+
 .chandigarhIndia {
   position: absolute;
   top: 0;
@@ -1019,12 +1174,14 @@
   width: 126.35px;
   height: 14.74px;
 }
+
 .locationContainer {
   position: relative;
   width: 145.35px;
   height: 18.02px;
   flex-shrink: 0;
 }
+
 .cardTitleInner3 {
   align-self: stretch;
   display: flex;
@@ -1034,6 +1191,7 @@
   font-size: var(--font-size-base);
   color: var(--color-slategray-100);
 }
+
 .assamIndia {
   position: absolute;
   top: 0;
@@ -1042,12 +1200,14 @@
   width: 126.35px;
   height: 14.74px;
 }
+
 .groupDiv {
   position: relative;
   width: 128.35px;
   height: 18.02px;
   flex-shrink: 0;
 }
+
 .bikesParent,
 .cardTitle9,
 .productsPackages {
@@ -1055,22 +1215,27 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .cardTitle9 {
   align-self: stretch;
   flex-direction: column;
   gap: var(--gap-lg);
 }
+
 .bikesParent,
 .productsPackages {
   flex-direction: row;
 }
+
 .bikesParent {
   flex: 1;
   font-size: var(--font-size-2xl);
 }
+
 .productsPackages {
   align-self: stretch;
 }
+
 .viewMore1 {
   text-decoration: none;
   position: relative;
@@ -1082,6 +1247,7 @@
   width: 1064px;
   cursor: pointer;
 }
+
 .featuredAds1 {
   align-self: stretch;
   background-color: var(--primary-contrast);
@@ -1094,11 +1260,13 @@
   font-size: var(--font-size-xl);
   color: var(--color-darkslategray-100);
 }
+
 .discoverTheWorld {
   align-self: stretch;
   position: relative;
   line-height: 40px;
 }
+
 .discoverTheWorld1 {
   position: relative;
   font-size: var(--font-size-xl);
@@ -1108,6 +1276,7 @@
   color: #6b6b6b;
   width: 1064px;
 }
+
 .featuredAdsText1 {
   align-self: stretch;
   display: flex;
@@ -1117,21 +1286,25 @@
   justify-content: flex-start;
   gap: var(--gap-8xs);
 }
+
 .companyLogo2,
 .logo2Icon {
   width: 57.68px;
   height: 77.62px;
 }
+
 .logo2Icon {
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
 }
+
 .companyLogo2 {
   position: relative;
   flex-shrink: 0;
 }
+
 .companyNameTitle {
   align-self: stretch;
   height: 110px;
@@ -1141,6 +1314,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .logo1Icon,
 .logo3Icon,
 .logo4Icon,
@@ -1151,21 +1325,25 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .logo1Icon,
 .logo4Icon,
 .logo5Icon {
   width: 80.47px;
   height: 70.5px;
 }
+
 .logo4Icon,
 .logo5Icon {
   width: 51.27px;
   height: 78.33px;
 }
+
 .logo5Icon {
   width: 69.79px;
   height: 70.5px;
 }
+
 .productsPackages1 {
   align-self: stretch;
   display: flex;
@@ -1175,6 +1353,7 @@
   font-size: var(--font-size-xl);
   color: var(--color-darkslategray-100);
 }
+
 .ourTrustedPartnersSection {
   align-self: stretch;
   background-color: #f5f5f5;
@@ -1186,19 +1365,23 @@
   gap: var(--gap-9xl);
   color: var(--color-darkslategray-200);
 }
+
 .downloadApp {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+
 .getTheVoucher {
   margin: 0;
 }
+
 .downloadAppContainer {
   position: relative;
   letter-spacing: 0.06em;
   line-height: 150%;
   font-weight: 900;
 }
+
 .get30OffContainer {
   position: relative;
   font-size: var(--font-size-xl);
@@ -1211,6 +1394,7 @@
   height: 45.76px;
   flex-shrink: 0;
 }
+
 .downloadAppGetTheVoucherParent {
   display: flex;
   flex-direction: column;
@@ -1218,6 +1402,7 @@
   justify-content: flex-start;
   gap: 30.75px;
 }
+
 .frameChild4 {
   position: relative;
   border-radius: var(--br-sm);
@@ -1226,12 +1411,14 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .frameParent7,
 .rectangleWrapper {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .rectangleWrapper {
   cursor: pointer;
   border: 0;
@@ -1239,13 +1426,16 @@
   background-color: transparent;
   flex-direction: column;
 }
+
 .frameParent7 {
   flex-direction: row;
   gap: 14.25px;
 }
+
 .downloadapp {
   gap: 48.76px;
 }
+
 .downloadapp,
 .vouchers {
   display: flex;
@@ -1253,6 +1443,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .image2Icon {
   position: relative;
   width: 528.19px;
@@ -1261,11 +1452,13 @@
   object-fit: cover;
   max-width: 50%;
 }
+
 .aboutUsImage,
 .appDownload {
   align-self: stretch;
   flex-shrink: 0;
 }
+
 .appDownload {
   background-color: var(--primary-contrast);
   height: 671.97px;
@@ -1280,14 +1473,16 @@
   font-size: var(--font-size-7xl);
   font-family: var(--font-poppins);
 }
+
 .aboutUsImage {
   position: relative;
   border-radius: var(--br-md);
   width: 100%;
   overflow: hidden;
-  /* height: 338px; */
-  object-fit: cover;
+  height: 338px;
+ 
 }
+
 .aboutUsImageContainer {
   flex: 1;
   display: flex;
@@ -1296,6 +1491,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .aboutUs {
   line-height: 40px;
   display: inline-block;
@@ -1305,21 +1501,25 @@
   height: 31px;
   flex-shrink: 0;
 }
+
 .aboutUs,
 .aboutUsDescription,
 .aboutUsTitle {
   align-self: stretch;
   position: relative;
 }
+
 .aboutUsTitle {
   font-size: var(--font-size-8xl);
   line-height: 36px;
   font-family: var(--font-changa-one);
 }
+
 .aboutUsDescription {
   line-height: 33px;
   font-family: var(--components-button-large);
 }
+
 .knowMore {
   position: absolute;
   width: 100%;
@@ -1328,6 +1528,7 @@
   line-height: 36px;
   display: inline-block;
 }
+
 .featuredDestinationCta {
   text-decoration: none;
   position: relative;
@@ -1338,18 +1539,21 @@
   color: var(--color-tomato);
   font-family: var(--components-button-large);
 }
+
 .aboutUsBlurb,
 .aboutUsSection {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .aboutUsBlurb {
   flex: 1;
   flex-direction: column;
   padding: var(--padding-3xl);
   gap: var(--gap-2xl);
 }
+
 .aboutUsSection {
   align-self: stretch;
   background-color: #f7f7f7;
@@ -1359,6 +1563,7 @@
   font-size: var(--font-size-xl);
   color: var(--color-darkslategray-200);
 }
+
 .shareYourTravelsSectionBac {
   position: absolute;
   top: 0;
@@ -1367,10 +1572,12 @@
   height: 430px;
   object-fit: cover;
 }
+
 .formTitle {
   align-self: stretch;
   position: relative;
 }
+
 .formHeader {
   align-self: stretch;
   display: flex;
@@ -1378,11 +1585,13 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .input {
   border: 0;
   background-color: transparent;
   align-self: stretch;
 }
+
 .formFields {
   align-self: stretch;
   display: flex;
@@ -1390,6 +1599,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .submit {
   position: relative;
   font-size: var(--font-size-base);
@@ -1397,6 +1607,7 @@
   color: var(--color-black);
   text-align: center;
 }
+
 .formSubmitButton {
   cursor: pointer;
   border: 0;
@@ -1410,15 +1621,18 @@
   align-items: center;
   justify-content: center;
 }
+
 .formSubmitButton:hover {
   background-color: var(--color-blueviolet-200);
 }
+
 .form,
 .shareYourTravelsForm {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .form {
   align-self: stretch;
   border-radius: var(--br-xl);
@@ -1428,6 +1642,7 @@
   align-items: flex-start;
   gap: var(--gap-sm);
 }
+
 .shareYourTravelsForm {
   position: relative !important;
   top: 73.93px;
@@ -1440,18 +1655,21 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .subcribeSection {
   height: 430px;
   flex-shrink: 0;
   display: none;
   font-size: var(--font-size-2xl);
 }
+
 .catchUpTo,
 .recentBlogsEntries,
 .subcribeSection {
   align-self: stretch;
   position: relative;
 }
+
 .catchUpTo {
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -1459,11 +1677,13 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 .recentBlogsEntries {
   font-size: var(--font-size-8xl);
   line-height: 40px;
   font-family: var(--font-lato);
 }
+
 .recentStoriesTitles {
   align-self: stretch;
   display: flex;
@@ -1472,6 +1692,7 @@
   justify-content: flex-start;
   gap: var(--gap-2xs);
 }
+
 .bigStoryImage {
   align-self: stretch;
   position: relative;
@@ -1482,18 +1703,21 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .inThisComprehensive,
 .theUltimateGuide {
   align-self: stretch;
   position: relative;
   line-height: 36px;
 }
+
 .inThisComprehensive {
   font-size: var(--font-size-base);
   line-height: 26px;
   font-family: var(--components-button-large);
   color: var(--color-slategray-200);
 }
+
 .bigStoryText {
   flex: 1;
   display: flex;
@@ -1502,6 +1726,7 @@
   justify-content: flex-start;
   gap: var(--gap-12xs);
 }
+
 .viewBlog {
   position: absolute;
   top: 0;
@@ -1514,6 +1739,7 @@
   display: inline-block;
   width: 111px;
 }
+
 .playButton {
   cursor: pointer;
   border: 0;
@@ -1524,6 +1750,7 @@
   height: 36px;
   flex-shrink: 0;
 }
+
 .bigStoryItems {
   align-self: stretch;
   display: flex;
@@ -1532,6 +1759,7 @@
   justify-content: flex-start;
   gap: 28px;
 }
+
 .bigStoryBody,
 .storyBigCard {
   display: flex;
@@ -1539,16 +1767,19 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .bigStoryBody {
   align-self: stretch;
   border-radius: 0 0 var(--br-md) var(--br-md);
   background-color: var(--color-whitesmoke-100);
   padding: var(--padding-5xs) var(--padding-md);
 }
+
 .storyBigCard {
   flex: 1;
-  height: 476.11px;
+  height: auto;
 }
+
 .storiesLeft {
   align-self: stretch;
   flex: 1;
@@ -1558,6 +1789,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .storyImageIcon {
   align-self: stretch;
   position: relative;
@@ -1567,21 +1799,25 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .viewFullBlog {
   color: var(--color-tomato);
 }
+
 .storyCard,
 .storyText {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .storyText {
   flex: 1;
   flex-direction: column;
   padding: var(--padding-10xs) 0 0;
   gap: var(--gap-9xs);
 }
+
 .storyCard {
   align-self: stretch;
   border-radius: var(--br-md);
@@ -1590,6 +1826,7 @@
   padding: var(--padding-8xs) var(--padding-7xs);
   gap: var(--gap-lg);
 }
+
 .storyImageIcon1 {
   align-self: stretch;
   position: relative;
@@ -1599,23 +1836,27 @@
   flex-shrink: 0;
   object-fit: cover;
 }
+
 .storiesColumn {
   align-self: stretch;
   flex-direction: column;
   justify-content: flex-start;
   gap: var(--gap-xs);
 }
+
 .storiesColumn,
 .storiesRight,
 .storyBlock {
   display: flex;
   align-items: flex-start;
 }
+
 .storiesRight {
   flex: 1;
   flex-direction: column;
   justify-content: center;
 }
+
 .storyBlock {
   align-self: stretch;
   flex-direction: row;
@@ -1624,12 +1865,14 @@
   font-size: var(--font-size-4xl);
   font-family: var(--font-changa-one);
 }
+
 .recentStoriesSection,
 .searchAdsBy1 {
   align-self: stretch;
   display: flex;
   justify-content: center;
 }
+
 .recentStoriesSection {
   background-color: var(--primary-contrast);
   flex-direction: column;
@@ -1640,6 +1883,7 @@
   color: var(--color-darkslategray-200);
   font-family: var(--components-button-large);
 }
+
 .searchAdsBy1 {
   position: relative;
   font-size: var(--font-size-2xl);
@@ -1650,11 +1894,13 @@
   height: 59px;
   flex-shrink: 0;
 }
+
 .home {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
+
 .footerCol1 {
   background-color: var(--color-gray-200);
   gap: var(--gap-lg);
@@ -1663,12 +1909,15 @@
   font-family: var(--components-button-large);
   width: 100%;
 }
-.frameParent8,.saskatchewanParent {
+
+.frameParent8,
+.saskatchewanParent {
   display: flex;
   justify-content: space-evenly;
   padding: 18px 0;
   cursor: pointer;
 }
+
 .home {
   position: relative;
   background-color: var(--primary-contrast);
@@ -1680,195 +1929,241 @@
   color: var(--color-black);
   font-family: var(--font-lato);
 }
+
 @media screen and (max-width: 1200px) {
   .rectangleContainer {
     display: none;
   }
+
   .frameParent {
     padding-left: 0;
     box-sizing: border-box;
   }
+
   .featuredAds {
     padding: var(--padding-5xl) var(--padding-10xl) var(--padding-7xl);
     box-sizing: border-box;
   }
+
   .column1 {
     flex-direction: row;
   }
+
   .category1,
   .category2 {
     flex-direction: column;
   }
+
   .category {
     padding-left: var(--padding-7xl);
     padding-right: var(--padding-7xl);
     box-sizing: border-box;
   }
+
   .fashioncards {
     flex-wrap: wrap;
     justify-content: space-around;
   }
+
   .bikesParent,
   .iphoneParent {
     width: 100%;
   }
+
   .featuredAds1,
   .ourTrustedPartnersSection {
     padding: var(--padding-5xl) var(--padding-10xl) var(--padding-7xl);
     box-sizing: border-box;
   }
+
   .appDownload {
     height: 1100px;
     flex-direction: column;
   }
+
   .aboutUsImageContainer {
     padding-right: 0;
     box-sizing: border-box;
   }
+
   .aboutUsSection {
     padding: var(--padding-10xl);
     box-sizing: border-box;
   }
+
   .formSubmitButton {
     background-color: var(--color-blueviolet-100);
     align-items: center;
     justify-content: center;
   }
+
   .storiesLeft {
     padding: var(--padding-8xs) 0;
     box-sizing: border-box;
   }
+
   .storiesLeft,
   .storiesRight {
     flex: unset;
     align-self: stretch;
   }
+
   .storyBlock {
     flex-direction: column;
     width: 70% !important;
     margin-left: auto;
     margin-right: auto;
   }
+
   .recentStoriesSection {
     padding: var(--padding-10xl);
     box-sizing: border-box;
   }
 }
+
 @media screen and (max-width: 768px) {
   .inputsRow {
     width: 100%;
     flex: unset;
     align-self: stretch;
   }
+
   .formInputsRow {
     flex-direction: column;
   }
+
   .searchButton {
     margin-right: auto;
   }
+
   .buttonGroup {
     width: 100%;
     text-align: left;
   }
+
   .searchForm {
     flex-direction: column;
   }
+
   .searchContainer {
     padding-left: var(--padding-3xl);
     padding-right: var(--padding-3xl);
     box-sizing: border-box;
   }
+
   .rectangleContainer {
     display: flex;
   }
+
   .frameParent {
+    align-items: center;
     flex-direction: column;
     box-sizing: border-box;
-    padding: 0 25%;
   }
+
   .featuredAds {
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
+
   .column1 {
     flex-direction: column;
   }
+
   .category {
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
+
   .title3 {
     font-size: var(--font-size-6xl);
   }
+
   .topCategory {
     padding-right: var(--padding-9xl);
     box-sizing: border-box;
   }
+
   .iphone {
     padding: var(--padding-10xs) 0 var(--padding-3xl) var(--padding-3xs);
     box-sizing: border-box;
     width: 50% !important;
   }
+
   .bikesParent,
   .iphoneParent {
     flex: unset;
     align-self: stretch;
   }
+
   .productsPackages {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
   .featuredAds1 {
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
+
   .productsPackages1 {
     flex-direction: column;
     flex-wrap: wrap;
   }
+
   .ourTrustedPartnersSection {
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
+
   .downloadAppContainer {
     font-size: var(--font-size-6xl);
   }
+
   .get30OffContainer {
     font-size: var(--font-size-xs);
   }
+
   .image2Icon {
     min-width: 400px;
     max-width: 90%;
   }
+
   .appDownload {
     flex-direction: column;
   }
+
   .aboutUsImage {
     width: 100% !important;
     height: auto !important;
   }
+
   .aboutUsBlurb,
   .aboutUsImageContainer {
     box-sizing: border-box;
     flex: unset;
     align-self: stretch;
   }
+
   .aboutUsImageContainer {
     display: none;
     padding-right: 0;
   }
+
   .aboutUsBlurb {
     padding: var(--padding-md) 0;
   }
+
   .aboutUsSection {
     flex-direction: column;
     padding: var(--padding-7xl) var(--padding-5xl);
     box-sizing: border-box;
   }
+
   .shareYourTravelsForm {
     padding: var(--padding-md) 0;
     box-sizing: border-box;
@@ -1878,31 +2173,38 @@
     left: auto !important;
     width: 90%;
   }
+
   .storyBlock {
     width: 98% !important;
     margin-left: auto;
     margin-right: auto;
   }
+
   .recentStoriesSection {
     padding: var(--padding-5xl);
     box-sizing: border-box;
   }
+
   .newfoundlandParent {
     padding-left: 0;
     box-sizing: border-box;
   }
-    .home {
+
+  .home {
     flex-direction: column;
   }
-  .footerCol1{
-    height: 16vh;
+
+  .footerCol1 {
+    height: 20vh;
   }
 }
+
 @media screen and (max-width: 428px) {
   .letsUsHelp {
     font-size: var(--font-size-9xl);
     line-height: 48px;
   }
+
   .searchMobilesBikes {
     width: 100%;
     padding-bottom: var(--padding-8xs);
@@ -1913,57 +2215,77 @@
     flex: unset;
     align-self: stretch;
   }
+
+  .mainButton {
+    padding: 15px 39px;
+    align-items: center;
+    flex-direction: column;
+  }
+
   .formTitleGroup {
     flex-direction: column;
     align-items: flex-start;
   }
+
   .inputdefault,
   .location {
     flex: unset;
     align-self: stretch;
   }
+
   .inputsRow {
     flex-direction: column;
   }
+
   .searchButton {
     width: 100% !important;
   }
+
   .searchForm {
     margin-top: 20px;
   }
+
   .recommendedAds {
     font-size: var(--font-size-7xl);
   }
+
   .featuredAds {
     padding-left: var(--padding-md);
     padding-right: var(--padding-md);
     box-sizing: border-box;
   }
+
   .column1 {
     transform: scale(0.8);
   }
+
   .category1,
   .category2 {
     gap: 0;
   }
+
   .category {
     padding-left: var(--padding-xs);
     padding-right: var(--padding-xs);
     box-sizing: border-box;
   }
+
   .cars,
   .moblies,
   .readEstate {
     max-width: 95%;
   }
+
   .topCategory {
     padding-left: var(--padding-xs);
     padding-right: var(--padding-xs);
     box-sizing: border-box;
   }
+
   .featuredAds2 {
     font-size: var(--font-size-7xl);
   }
+
   .iphone {
     padding: var(--padding-xs);
     box-sizing: border-box;
@@ -1971,38 +2293,48 @@
     flex: unset;
     align-self: stretch;
   }
+
   .bikesParent,
   .iphoneParent {
     flex-direction: column;
   }
+
   .featuredAds1 {
     padding-left: var(--padding-md);
     padding-right: var(--padding-md);
     box-sizing: border-box;
   }
+
   .discoverTheWorld {
     font-size: var(--font-size-7xl);
   }
+
   .ourTrustedPartnersSection {
     padding-left: var(--padding-md);
     padding-right: var(--padding-md);
     box-sizing: border-box;
   }
+
   .downloadAppContainer {
     font-size: 25px;
   }
+
   .get30OffContainer {
     font-size: var(--font-size-3xs);
   }
+
   .image2Icon {
     min-width: 350px;
   }
+
   .aboutUsTitle {
     font-size: var(--font-size-7xl);
   }
+
   .shareYourTravelsSectionBac {
     height: 950px;
   }
+
   .shareYourTravelsForm {
     padding-left: var(--padding-md);
     padding-right: var(--padding-md);
@@ -2013,44 +2345,55 @@
     left: auto !important;
     width: 100% !important;
   }
+
   .bigStoryImage {
     width: 100% !important;
     height: auto !important;
   }
+
   .bigStoryItems {
     flex-direction: row;
   }
+
   .storyImageIcon {
     width: 100% !important;
     height: auto !important;
   }
+
   .storyText {
     flex: unset;
     align-self: stretch;
   }
+
   .storyCard {
     flex-direction: column;
   }
+
   .storyImageIcon1 {
     width: 100% !important;
     heigth: auto !important;
   }
+
   .storyBlock {
     width: 100% !important;
     margin-left: auto;
     margin-right: auto;
   }
+
   .recentStoriesSection {
     padding: var(--padding-3xl) var(--padding-md);
     box-sizing: border-box;
   }
-  .footerCol1{
-    height:max-content;
+
+  .footerCol1 {
+    height: max-content;
     padding: 1vh 0;
   }
-  .frameParent8 , .saskatchewanParent{
-  display: block;
-  padding: 0;
-  
+
+  .frameParent8,
+  .saskatchewanParent {
+    display: block;
+    padding: 0;
+
   }
 }

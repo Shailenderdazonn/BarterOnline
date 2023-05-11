@@ -259,12 +259,18 @@
 
 @media screen and (max-width: 428px) {
   .headerLogo {
-    width: 210px;
+    width: 153px;
+  }
+  .headerHamburgerMenu{
+    display: none
+  }
+
+  .headerElementsRow {
+     justify-content: space-evenly;
   }
 
   .headerSection {
-    padding-left: var(--padding-md);
-    padding-right: var(--padding-md);
+    padding: 0;
     box-sizing: border-box;
   }
 }

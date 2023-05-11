@@ -55,8 +55,6 @@ const HeaderSection = () => {
               </button>
               <a className={styles.category} onClick={onAllAds} >All Ads</a>
               <button className={styles.aboutUs} onClick={onAboutUs} >About Us</button>
-
-
               <div className={styles.advertiseWithUs}>
                 <a>Provinces
                   <img

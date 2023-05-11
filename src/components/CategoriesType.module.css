@@ -14,27 +14,15 @@
   width: 179px;
   height: 22px;
   flex-shrink: 0;
+  padding: 12px 0 0 43px ;
+  
 }
-.cardTitle {
-  flex: 1;
-  flex-direction: column;
-  padding: 0 0 0 var(--padding-xs);
-  align-items: flex-start;
-  gap: var(--gap-6xl);
-}
+/* 
 .allCategories,
-.cardTitle,
 .text {
   display: flex;
   justify-content: flex-start;
-}
-.text {
-  align-self: stretch;
-  flex-direction: row;
-  padding: 0 0 0 var(--padding-xs);
-  align-items: flex-start;
-  margin-top: -30px;
-}
+} */
 .allCategories {
   text-decoration: none;
   width: 373.33px;

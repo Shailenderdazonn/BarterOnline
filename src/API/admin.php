@@ -1,27 +1,2 @@
-<?php      
-    
-    $host = "localhost";  
-    $user = "root";  
-    $password = '';  
-    $db_name = "barter_db";  
-      
-    $con = mysqli_connect($host, $user, $password, $db_name);  
-    if(mysqli_connect_errno()) {  
-        die("Failed to connect with MySQL: ". mysqli_connect_error());  
-    }  
-     
-    $email = $_POST['email'];  
-    $password = $_POST['password'];       
-      
-        $sql = "select * from admin_detail where email = '$email' and password = '$password'";  
-        $result = mysqli_query($con, $sql);  
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
-        $count = mysqli_num_rows($result);            
-        if($count == 1){  
-          
-            header('Location: http://localhost:3000/dashboard');
-        }  
-        else{  
-            echo "<h1> Login failed. Invalid username or password.</h1>";
-        }     
+<?php $a="localhost";$b="root";$c='';$d="barter_db";$e=mysqli_connect($a,$b,$c,$d);if(mysqli_connect_errno()){die("Failed to connect with MySQL: ".mysqli_connect_error());}$f=$_POST['email'];$g=$_POST['password'];$h="select * from admin_detail where email='$f' and password='$g'";$i=mysqli_query($e,$h);$j=mysqli_fetch_array($i,MYSQLI_ASSOC);$k=mysqli_num_rows($i);if($k==1){header('Location: http://localhost:3000/dashboard');}else{echo"<h1>Login failed. Invalid username or password.</h1>";}
 ?>  

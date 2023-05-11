@@ -212,6 +212,7 @@
 }
 @media screen and (max-width: 428px) {
   .footerStart {
+    width: 92vw;
     background-color: var(--color-gray-200);
   }
   .footerCol1,
